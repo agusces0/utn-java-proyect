@@ -8,64 +8,65 @@ package test.java.proyect;
  *
  * @author agusc
  */
+
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Menu {
-    
-    //ATRIBUTOS
     private String nombre;
     private List<Burger> menuBurger;
     private List<Drink> menuDrink;
-    private List<Topic> menuTopic;
+    private List<Acompanamientos> menuAcomp;
 
-    //CONSTRUCTORES
-    public Menu(){
+    public Menu() {
     }
 
-    public Menu(String nombre){
+    public Menu(String nombre) {
         this.nombre = nombre;
-        menuBurger = new ArrayList<Burger>();
-        menuDrink = new ArrayList<Drink>();
-        menuTopic = new ArrayList<Topic>();
+        this.menuBurger = new ArrayList();
+        this.menuDrink = new ArrayList();
+        this.menuAcomp = new ArrayList();
     }
 
-    //MÉTODOS
-    public String getNombre(){
-        return nombre;
+    public String getNombre() {
+        return this.nombre;
     }
 
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void addMenuDrink(Drink i){
-        menuDrink.add(i);
+    public void addMenuDrink(Drink i) {
+        this.menuDrink.add(i);
     }
 
-    public void remMenuBurger(Drink i){
-        menuDrink.remove(i);
+    public void remMenuBurger(Drink i) {
+        this.menuDrink.remove(i);
     }
 
-    public void addMenuBurger(Burger j){
-        menuBurger.add(j);
+    public void addMenuBurger(Burger j) {
+        this.menuBurger.add(j);
     }
 
-    public void remMenuBurger(Burger j){
-        menuBurger.remove(j);
-    }
-    public void addMenuTopic(Topic x){
-        menuTopic.add(x);
+    public void remMenuBurger(Burger j) {
+        this.menuBurger.remove(j);
     }
 
-    public void remMenuTopic(Topic j){
-        menuTopic.remove(j);
+    public void addMenuAcomp(Acompanamientos x) {
+        this.menuAcomp.add(x);
     }
 
-    public void showMenuBurger(){
+    public void remMenuAcomp(Acompanamientos x) {
+        this.menuAcomp.remove(x);
+    }
 
-        for (Burger i : menuBurger) {
-            System.out.print(i.getIndex()+": ");
+    public void showMenuBurger() {
+        Iterator var1 = this.menuBurger.iterator();
+
+        while(var1.hasNext()) {
+            Burger i = (Burger)var1.next();
+            System.out.print(i.getIndex() + ": ");
             System.out.print(i.getName());
             System.out.print("  $ ");
             System.out.println(i.getPrice());
@@ -73,33 +74,40 @@ public class Menu {
             System.out.println(i.getDesc());
             System.out.println("");
         }
+
     }
 
-    public void showMenuDrink(){
+    public void showMenuDrink() {
+        Iterator var1 = this.menuDrink.iterator();
 
-        for (Drink i : menuDrink) {
-            System.out.print(i.getIndex()+": ");
+        while(var1.hasNext()) {
+            Drink i = (Drink)var1.next();
+            System.out.print(i.getIndex() + ": ");
             System.out.print(i.getName());
             System.out.print("  $ ");
             System.out.println(i.getPrice());
             System.out.print("Tamaño: ");
-            System.out.println(i.getSize()+" L");
+            System.out.println(i.getSize() + " L");
             System.out.println("");
         }
+
     }
 
-/*   public burger addCart(String name){
+    public void showMenuAcomp() {
+        Iterator var1 = this.menuAcomp.iterator();
 
-        burger encontrado = null;
-
-        for (burger i : menus){
-          
-            if (i.getName() == name){
-                return i;
-            }
+        while(var1.hasNext()) {
+            Acompanamientos i = (Acompanamientos)var1.next();
+            System.out.print(i.getIndex() + ": ");
+            System.out.print(i.getName());
+            System.out.print("  $ ");
+            System.out.println(i.getPrice());
+            System.out.print("Contiene: ");
+            System.out.println(i.getDesc());
+            System.out.println("");
         }
-        return encontrado;
-    }*/ 
 
+    }
 }
+
 
