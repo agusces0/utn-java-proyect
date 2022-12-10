@@ -17,7 +17,7 @@
   - INTRODUCCIÓN:
     - Se realizó un proyecto en el lenguaje de programación JAVA a partir del hecho anteriormente en PSEint. El nuevo proyecto tiene como caracteristicas principales la posibilidad de llevar un registro antes de realizar el pedido, realizar un pedido por partes, hamburguesa, bebida y acompañamiento, además de luego obtener un ticket con el SUBTOTAL y TOTAL que incluye impuestos.
     - Se trabajó en distintas clases buscando una mayor prolijidad a la hora de presentar el proyecto, además de mayor sencillez a la hora de trabajar en grupo. En ellas distintos métodos que explayaremos más adelante en la documentación y son valiosos para la aplicación.
-    - IDE utilizados: Netbeans IDE 12.6 y IntelliJ IDEA.
+    - IDE utilizados: Netbeans IDE 12.6 e IntelliJ IDEA.
 
   - REGISTRO:
     - El registro se solicita al usuario através de un panel creado con JOptionPane, ya que es más intuitivo y fácil de usar para el usuario. En el mismo se solicita el nombre, número de teléfono y una confirmación. Si la confirmación es afirmativa el programa continua con el pedido, pero si es negativa se vuelven a pedir los datos con el mismo proceso, primero el nombre y luego el número de teléfono.
