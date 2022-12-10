@@ -2,14 +2,19 @@
  * GRUPO: YOUNGDEVELOPERS
 
  * INTEGRANTES:
-   si
+    Ceschin Agustín
+    Diaz Micaela
+    Montoya Lucas
+    Morbidelli Valentin
+    Rebolledo Lourdes
+    Rebolledo Lujan ?
+    Zambrana Ana
 
  */
 package test.java.proyect;
 
 import java.awt.Component;
 import java.util.Scanner;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class App{
