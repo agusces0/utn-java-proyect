@@ -64,8 +64,6 @@ public class App{
             total = JOptionPane.showConfirmDialog((Component)null, "Confirma si tus datos son correcto: " + nombre + " " + numero, "CONFIRMACIÓN", 0, 1);
         }
 
-        ImageIcon icono = new ImageIcon("C:\\Users\\WIN-10\\tecnicaturaGit\\java\\Lecccion10\\Burgerhouse\\src\\Burger\\hamburguesa-con-queso (1).png");
-        JOptionPane.showConfirmDialog((Component)null, "Desea pedir una Hamburguesa", "Bienvenido a BurgerHouse", 1, 2, icono);
         Scanner sc = new Scanner(System.in);
         System.out.println("BurgerApp");
         System.out.println("");
@@ -116,8 +114,6 @@ public class App{
             System.out.println("");
         }
 
-        ImageIcon iconos = new ImageIcon("C:\\Users\\WIN-10\\tecnicaturaGit\\java\\Lecccion10\\Burgerhouse\\src\\Burger\\bebidas.png");
-        JOptionPane.showConfirmDialog((Component)null, "Desea pedir una Bebida", "Menu de Bebidas", 1, 2, iconos);
         System.out.println("¿DESEA AGREGAR UNA BEBIDA?");
         System.out.println("1 SI | 2 NO");
         selection = sc.nextInt();
@@ -162,8 +158,6 @@ public class App{
             System.out.println("");
         }
 
-        ImageIcon papas = new ImageIcon("C:\\Users\\WIN-10\\tecnicaturaGit\\java\\Lecccion10\\Burgerhouse\\src\\Burger\\papas-fritas.png");
-        JOptionPane.showConfirmDialog((Component)null, "Desea pedir un acompañamiento", "Menu de acompañamiento", 1, 2, papas);
         System.out.println("¿DESEA AGREGAR UN ACOMPAÑAMIENTO?");
         System.out.println("1 SI | 2 NO");
         selection = sc.nextInt();
@@ -208,9 +202,5 @@ public class App{
         int totalNeto = total / 21 + total;
         System.out.println("TOTAL: " + totalNeto);
         sc.close();
-    }
-
-    private static void setIconImage(ImageIcon imageIcon) {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
